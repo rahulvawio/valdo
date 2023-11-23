@@ -4,10 +4,9 @@ metadata:
   name: load-bl
 spec:
   selector:
-    name: clust-in
     lkm: llk
   ports:
     - port: 9909
-      targetPort: 8080
+      targetPort: 80
       protocol: TCP
   type: LoadBalancer

@@ -4,6 +4,7 @@ metadata:
   name: load-bl
 spec:
   selector:
+    lkm: llk
     tier: tils
   ports:
     - port: 9909

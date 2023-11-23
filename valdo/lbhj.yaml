@@ -7,5 +7,5 @@ spec:
     name: clust-in
   ports:
     - port: 8080
-      targetPort: 7090
+      targetPort: 80
   type: LoadBalancer

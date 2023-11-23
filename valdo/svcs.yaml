@@ -9,5 +9,4 @@ spec:
   selector:
     name: nginx
   ports:
-  - port: 7090
-    targetPort: 80
+  - port: 80

@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: nginx
   labels:
-    name: nginx
+    name: plox
 spec:
   containers:
   - name: php-redis22

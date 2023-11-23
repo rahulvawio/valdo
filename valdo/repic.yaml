@@ -3,8 +3,8 @@ kind: ReplicaSet
 metadata:
   name: mypodrs
   labels:
-    app: podrs
-    tier: frontend
+    app: ekw
+    tier: tils
 spec:
   template:
     metadata:

@@ -4,10 +4,11 @@ metadata:
   name: pots-service
   labels:
     name: clust-in
+    igns: nbjs
 spec:
   type: NodePort
   selector:
     name: nginx
   ports:
-  - port: 8080
+  - port: 80
     targetPort: 80

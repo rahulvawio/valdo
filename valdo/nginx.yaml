@@ -4,6 +4,7 @@ metadata:
   name: nginx
   labels:
     name: nginx
+    lkm: llk
 spec:
   containers:
   - name: php-redis22

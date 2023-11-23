@@ -7,7 +7,7 @@ spec:
     name: clust-in
     igns: nbjs
   ports:
-    - port: 80
+    - port: 9909
       targetPort: 8080
       protocol: TCP
   type: LoadBalancer

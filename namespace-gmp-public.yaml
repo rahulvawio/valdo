@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    components.gke.io/component-name: managed-prometheus
+    components.gke.io/component-version: 0.7.4-gke.2
+    components.gke.io/layer: addon
+  creationTimestamp: "2023-11-21T06:06:35Z"
+  labels:
+    addonmanager.kubernetes.io/mode: Reconcile
+    kubernetes.io/metadata.name: gmp-public
+  name: gmp-public
+  resourceVersion: "572"
+  uid: 0fa0973a-6773-4c76-b581-b93d9f92b305
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active

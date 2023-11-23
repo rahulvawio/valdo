@@ -4,7 +4,7 @@ metadata:
   name: load-bl
 spec:
   selector:
-    lkm: llk
+    tier: tils
   ports:
     - port: 9909
       targetPort: 80

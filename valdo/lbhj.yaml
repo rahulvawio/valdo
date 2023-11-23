@@ -5,6 +5,7 @@ metadata:
 spec:
   selector:
     name: clust-in
+    igns: nbjs
   ports:
     - port: 8090
       targetPort: 8080

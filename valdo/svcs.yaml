@@ -5,7 +5,7 @@ metadata:
   labels:
     name: clust-in
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     name: nginx
   ports:

@@ -6,7 +6,7 @@ spec:
   selector:
     name: clust-in
   ports:
-    - port: 80
+    - port: 8080
       targetPort: 80
       protocol: TCP
   type: LoadBalancer

@@ -4,7 +4,7 @@ metadata:
   name: my-ingress
   labels:
     jkl: llop
-  namespace: ingress-nginx
+  namespace: rahul
 spec:
   rules:
   - host: my-domain.com

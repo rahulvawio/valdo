@@ -10,19 +10,11 @@ spec:
   rules:
   - http:
       paths:
-      - path: /path1
+      - path: /
         pathType: Prefix
         backend:
           service:
-            name: pots-service
-            port:
-              number: 80
-            namespace: rahul
-      - path: /path2
-        pathType: Prefix
-        backend:
-          service:
-            name: pots-service
+            name: proms-serv
             port:
               number: 80
             namespace: rahul

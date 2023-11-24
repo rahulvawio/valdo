@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-ingress
+  labels:
+    jkl: llop
+  namespace: ingress-nginx
+spec:
+  rules:
+  - host: my-domain.com
+    http:
+      paths:
+      - path: /hello
+        pathType: Prefix
+        backend:
+          service:
+            name: pots-service
+            port:
+              number: 80

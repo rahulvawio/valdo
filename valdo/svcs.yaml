@@ -6,7 +6,7 @@ metadata:
     name: clust-in
     igns: nbjs
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     name: nginx
   ports:

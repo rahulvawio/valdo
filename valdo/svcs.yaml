@@ -4,7 +4,6 @@ metadata:
   name: pots-service
   labels:
     name: clust-in
-    igns: nbjs
 spec:
   type: NodePort
   selector:

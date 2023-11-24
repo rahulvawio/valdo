@@ -5,7 +5,6 @@ metadata:
 spec:
   selector:
     name: clust-in
-    lkm: llk
   ports:
     - port: 8080
       targetPort: 80

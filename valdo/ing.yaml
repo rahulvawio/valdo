@@ -6,6 +6,7 @@ metadata:
     jkl: llop
   namespace: rahul
 spec:
+  ingressClassName: nginx
   rules:
   - http:
       paths:

@@ -4,7 +4,7 @@ metadata:
   name: load-bl
 spec:
   selector:
-    name: clust-in
+    app: kekw
   ports:
     - port: 8080
       targetPort: 80

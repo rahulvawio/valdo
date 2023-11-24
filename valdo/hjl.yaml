@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: apps
-        image: 787367675716.dkr.ecr.ap-south-1.amazonaws.com/argo:latest
+        image: sau321/my-repo:argo
         ports:
         - containerPort: 80

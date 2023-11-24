@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: prom
-        image: bitnami/prometheus"
+        image: bitnami/prometheus:latest
         ports:
         - containerPort: 9090

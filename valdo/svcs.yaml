@@ -5,7 +5,7 @@ metadata:
   labels:
     name: clust-in
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: kekw
   ports:

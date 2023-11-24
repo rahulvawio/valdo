@@ -7,8 +7,7 @@ metadata:
   namespace: ingress-nginx
 spec:
   rules:
-  - host: my-domain.com
-    http:
+  - http:
       paths:
       - path: /hello
         pathType: Prefix

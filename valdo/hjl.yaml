@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: nginx
   labels:
@@ -19,3 +19,5 @@ spec:
         image: sau321/my-repo:argo
         ports:
         - containerPort: 80
+  serviceName: pots-service
+  

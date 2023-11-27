@@ -18,3 +18,4 @@ spec:
         image: bitnami/prometheus:latest
         ports:
         - containerPort: 9090
+  serviceName: pots-service

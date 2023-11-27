@@ -18,6 +18,9 @@ spec:
         image: bitnami/prometheus:latest
         ports:
         - containerPort: 9090
+        volumeMounts:
+        - mountPath: "/usr/share/nginx/html"
+          name: pvcmm
   volumes:
   - name: pvc-demo-vol
     persistentVolumeClaim:

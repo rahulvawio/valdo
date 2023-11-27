@@ -5,6 +5,10 @@ metadata:
   labels:
     app: prom
 spec:
+  volumes:
+  - name: pvc-demo-vol
+    persistentVolumeClaim:
+    claimName: myclaim
   selector:
     matchLabels:
       app: prom
@@ -18,8 +22,4 @@ spec:
         image: bitnami/prometheus:latest
         ports:
         - containerPort: 9090
-        volumes:
-        - name: pvc-demo-vol
-          persistentVolumeClaim:
-          claimName: myclaim
 

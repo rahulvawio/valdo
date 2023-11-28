@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordplb
+spec:
+  type: LoadBalancer
+  selector:
+    deploy: dpwps
+  ports:
+  - port: 3000
+    targetPort: 8080

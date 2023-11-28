@@ -1,35 +1,35 @@
-apiVersion: apps/v1
-kind: StatefulSet
-metadata:
-  name: nginx
-  labels:
-    app: kekw
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
+  apiVersion: apps/v1
+  kind: SttefulSet
+  metadata:
+    name: nginx
+    labels:
       app: kekw
-  template:
-    metadata:
-      labels:
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
         app: kekw
-    spec:
-      containers:
-      - name: apps
-        image: sau321/my-repo:argo
-        ports:
-        - containerPort: 80
-        volumeMounts:
-        - name: www
-          mountPath: /usr/share/nginx/html
-  serviceName: pots-service
-  volumeClaimTemplates:
-  - metadata:
-      name: www
-    spec:
-      accessModes: [ "ReadWriteOnce" ]
-      resources:
-        requests:
-          storage: 10Gi
-  
-  
+    template:
+      metadata:
+        labels:
+          app: kekw
+      spec:
+        containers:
+        - name: apps
+          image: sau321/my-repo:argo
+          ports:
+          - containerPort: 80
+          volumeMounts:
+          - name: www
+            mountPath: /usr/share/nginx/html
+    serviceName: pots-service
+    volumeClaimTemplates:
+    - metadata:
+        name: www
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        resources:
+          requests:
+            storage: 10Gi
+    
+    

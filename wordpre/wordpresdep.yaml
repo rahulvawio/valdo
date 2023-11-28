@@ -39,4 +39,4 @@ spec:
                 name: wdpresconf
                 key: WORDPRESS_DB_NAME
         ports:
-        - containerPort: 8080
+        - containerPort: 80

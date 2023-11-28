@@ -39,7 +39,7 @@ spec:
                 name: mysqldbsec
                 key: MYSQL_ROOT_PASSWORD
         ports:
-        - containerPort: 80
+        - containerPort: 3306
         volumeMounts:
         - name: www
           mountPath: /var/lib/mysql

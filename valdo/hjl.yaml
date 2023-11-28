@@ -22,7 +22,6 @@ spec:
         volumeMounts:
         - name: www
           mountPath: /usr/share/nginx/html
-
   serviceName: pots-service
   volumeClaimTemplates:
   - metadata:

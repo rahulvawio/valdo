@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysqlconf
+data:
+  MYSQL_DATABASE: wordpressdb
+  MYSQL_USER: wordpressuser
+immutable: true

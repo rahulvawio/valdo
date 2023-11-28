@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysqldbsec
+type: Opaque
+data:
+  MYSQL_PASSWORD: bXlhZG1pbg0K

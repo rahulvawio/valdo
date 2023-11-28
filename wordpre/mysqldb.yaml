@@ -17,6 +17,22 @@ spec:
       containers:
       - name: mysql
         image: mysql:8.2.0
+        env:
+          - name: MYSQL_DATABASE
+            valueFrom:
+              configMapKeyRef:
+                name: mysqlconf
+                key: MYSQL_DATABASE
+          - name: MYSQL_USER
+            valueFrom:
+              configMapKeyRef:
+                name: mysqlconf
+                key: MYSQL_USER
+          - name: MYSQL_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mysqldbsec
+                key: MYSQL_PASSWORD
         ports:
         - containerPort: 80
         volumeMounts:

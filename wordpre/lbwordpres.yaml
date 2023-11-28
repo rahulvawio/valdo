@@ -6,6 +6,7 @@ spec:
   type: LoadBalancer
   selector:
     deploy: dpwps
+    app: wordpress
   ports:
   - port: 3000
     targetPort: 8080

@@ -10,5 +10,3 @@ spec:
     app: kekw
   ports:
   - port: 3306
-    protocol: TCP
-    targetPort: 3306

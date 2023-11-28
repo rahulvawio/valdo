@@ -17,14 +17,7 @@ spec:
       containers:
       - name: apps
         image: sau321/my-repo:argo
-        volumeMounts:
-          - mountPath: "/usr/share/nginx/html"
-            name: pvcmm
         ports:
         - containerPort: 80
   serviceName: pots-service
-  volumes:
-  - name: pvc-demo-vol
-    persistentVolumeClaim:
-      claimName: myclaim
   

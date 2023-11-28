@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: wordplb
+  name: wordpress-service
 spec:
-  type: LoadBalancer
   selector:
-    deploy: dpwps
     app: wordpress
   ports:
-  - port: 3000
-    targetPort: 8080
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer

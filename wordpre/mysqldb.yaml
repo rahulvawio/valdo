@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mysql
+  labels:
+    app: kekw
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kekw
+  template:
+    metadata:
+      labels:
+        app: kekw
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:8.2.0
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: mps
+          mountPath: /var/lib/mysql
+  serviceName: mysql-svc
+  volumeClaimTemplates:
+  - metadata:
+      name: www
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 30Gi
+  
+  

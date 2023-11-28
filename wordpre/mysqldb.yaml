@@ -20,7 +20,7 @@ spec:
         ports:
         - containerPort: 80
         volumeMounts:
-        - name: mps
+        - name: www
           mountPath: /var/lib/mysql
   serviceName: mysql-svc
   volumeClaimTemplates:

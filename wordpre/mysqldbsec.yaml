@@ -5,3 +5,4 @@ metadata:
 type: Opaque
 data:
   MYSQL_PASSWORD: bXlhZG1pbg0K
+  MYSQL_ROOT_PASSWORD: cGFzc3dvcmQ=

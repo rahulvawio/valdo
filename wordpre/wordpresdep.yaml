@@ -22,7 +22,7 @@ spec:
             valueFrom:
               configMapKeyRef:
                 name: wdpresconf
-                key: MYSQL_USER
+                key: WORDPRESS_DB_HOST
           - name: WORDPRESS_DB_USER
             valueFrom:
               configMapKeyRef:

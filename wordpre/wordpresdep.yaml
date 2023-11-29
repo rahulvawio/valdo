@@ -33,8 +33,8 @@ spec:
 
           - name: WORDPRESS_DB_PASSWORD
             valueFrom:
-              secretKeyRef:
-                name: mysqldbsec
+              configMapKeyRef:
+                name: mysqlconf
                 key: MYSQL_PASSWORD
 
           - name: WORDPRESS_DB_NAME

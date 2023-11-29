@@ -5,4 +5,6 @@ metadata:
 data:
   MYSQL_DATABASE: wordpressdb
   MYSQL_USER: wordpressuser
+  MYSQL_PASSWORD: password
+  MYSQL_ROOT_PASSWORD: password
 immutable: true

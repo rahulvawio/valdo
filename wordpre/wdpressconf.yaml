@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: wdpresconf
 data:
-  WORDPRESS_DB_HOST: 10.64.3.174:3306
+  WORDPRESS_DB_HOST: mysql-svc
   WORDPRESS_DB_USER: wordpressuser
   WORDPRESS_DB_PASSWORD: myadmin
   WORDPRESS_DB_NAME: wordpressdb

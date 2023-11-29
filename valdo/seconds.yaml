@@ -18,11 +18,3 @@ spec:
         image: bitnami/prometheus:latest
         ports:
         - containerPort: 9090
-    volumeClaimTemplates:
-    - metadata:
-      name: www
-      spec:
-        accessModes: [ "ReadWriteOnce" ]
-        resources:
-          requests:
-            storage: 10Gi

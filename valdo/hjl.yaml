@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: StatefulSet
+kind: Deployment
 metadata:
   name: nginx
   labels:
@@ -22,8 +22,6 @@ spec:
         volumeMounts:
         - name: www
           mountPath: /usr/share/nginx/html
-
-  serviceName: pots-service
   volumeClaimTemplates:
   - metadata:
       name: www
@@ -31,6 +29,6 @@ spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
-          storage: 1Gi
+          storage: 5Gi
   
   

@@ -15,7 +15,7 @@ spec:
         app: wordpress
     spec:
       containers:
-      - name: wordpress
+      # - name: wordpress
         image: wordpress:6.4.1
         env:
 

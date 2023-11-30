@@ -18,5 +18,9 @@ spec:
       - name: apps
         image: sau321/my-repo:argo
         ports:
-        - containerPort: 80
+        - containerPort: 80 
+        resources:
+          requests:
+            cpu: 100m
+            memory: 500m
   
